@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Bug Reporter MVP",
+  "version": "1.0",
+  "description": "Quick bug reporting tool",
+
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "popup.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

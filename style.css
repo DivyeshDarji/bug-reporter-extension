@@ -1,0 +1,39 @@
+#bug-report-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: red;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#bug-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 9999;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bug-container {
+  width: 400px;
+  background: white;
+  padding: 15px;
+  height: 100%;
+  overflow: auto;
+}
+
+.row {
+  display: flex;
+  gap: 5px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
