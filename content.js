@@ -223,7 +223,7 @@ ${bugData.actual}
   // Send data to backend for Jira ticket creation
   const payload = {
     fields: {
-      project: { key: "BRT" },
+      project: { key: "BRT" }, //XPASS
       summary: bugData.summary,
       description: {
         type: "doc",
@@ -236,6 +236,7 @@ ${bugData.actual}
         ]
       },
       issuetype: { name: "Bug" },
+      //parent: { key: "XPASS-12994" }
       priority: { name: bugData.priority },
       customfield_10166: {
         value: severityMap[bugData.severity]
